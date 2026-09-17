@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Siksa';       /* Tulis nama bebas untuk font Anda */
+    src: url('Coolvetica Hv Comp.otf');    /* Nama file font harus sama persis */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+
+/* Container Utama Video */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 30px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+/* Grid 2 Kolom untuk Thumbnail (Kotak Merah) */
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Kolom ke samping */
+    gap: 15px; /* Jarak antar thumbnail */
+    width: 45%;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail-grid img:hover {
+    transform: scale(1.03); /* Efek hover saat diklik/disentuh */
+}
+
+.Profil img:hover {
+    transition: transform 0.2s;
+    transform: scale(1.03);
+}
+
+.Liro:hover {
+    transform: scale(1.03);  
+    transition: transform 0.2s;                   
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);     
+}
+
+.icon img:hover {
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1.03); 
+}
+
+.lira :hover {
+    transform: scale(1.03);                     
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);    
+    transition: transform 0.2s; 
+}
+
+/* Pemutar Video YouTube */
+.player-container {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    /* CARA MENGUBAH POSISI VIDEO KE BAWAH: */
+    margin-top: 40px; /* Tambah angka ini jika ingin posisi pemutar video makin kebawah */
+}
+
+
+body {
+    font-family: 'Siksa', sans-serif; /* Panggil nama yang dibuat di atas */
+}
+
+.channel-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.channel-ikon {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    border: 5px solid white;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.channel-info h1 {
+    margin: 0;
+}
+
+
+
+.channel-info p {
+    margin: 10px 0;
+}
+
+.judul{
+        padding: 10 1000px;
+        display: inline-block;
+        display: table; 
+        border-radius: 24px;
+
+}
+
+.anjing {
+    width: 90%; /* Tambahkan ini agar kotak abu-abu memenuhi area header */
+    border: 1px solid black;
+    background-color: rgb(163, 185, 204);
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.stet {
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid black;
+    background-color: rgb(163, 185, 204);
+    border-radius: 24px;
+    padding: 20px;          /* Disesuaikan agar konsisten */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.spacer {
+  height: 60px; /* Atur tinggi jarak kosong yang diinginkan */
+}
+
+.Profil {
+    width: 90%;             /* Ubah dari 70% agar proporsional di HP */
+    max-width: 800px;
+    border: 1px solid black;
+    margin: 20px auto; 
+    background-color: rgb(163, 185, 204);
+    border-radius: 24px;    /* Diperhalus sudutnya */
+    padding: 20px;          /* Dikecilkan dari 80px agar border putih tidak terlalu tebal */
+    
+    display: flex;
+    flex-direction: column; /* Ditumpuk vertikal untuk tampilan HP */
+    align-items: center;    
+    gap: 15px;              
+    box-sizing: border-box; /* Agar padding tidak merusak ukuran total */
+}
+
+.judul {
+    grid-column: 1;
+}
+
+.lari{
+        border: 1px solid rgb(3, 3, 3);
+        background-color: black;
+        width: 20%;
+        font-size: 100%;
+        text-align: center;
+        color: rgb(249, 249, 249);
+        padding: 15px;
+        display: inline-block;
+        padding: 0 150px; 
+        display: table; 
+        border-radius: 24px;
+}
+
+
+.lira {
+    border: 1px solid rgb(38, 69, 154);
+    background-color: rgb(64, 115, 185);
+    width: 100%;            /* Ubah dari 70% jadi 100% agar pas memenuhi kotak induknya */
+    font-size: 100%;
+    color: rgb(249, 249, 249);
+    padding: 15px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.Liro {
+    border: 1px solid rgb(38, 69, 154);
+    background-color: rgb(64, 115, 185);
+    width: 100%;            /* Ubah dari 70% jadi 100% */
+    font-size: 100%;
+    color: rgb(249, 249, 249);
+    padding: 15px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+ul {
+          display: flex;
+          border: 1x solid rgb(250, 248, 248);
+          background-color: rgb(255, 255, 255);
+          border-radius: 15px;
+          margin-bottom: 15px;
+          width: 20%;
+          box-shadow: 0 5px 10px rgb(56, 56, 56);
+          text-decoration: none;  
+          font-size: 20px;
+}
+
+.ja {
+          display: flex;
+          border: 1x solid rgb(250, 248, 248);
+          background-color: rgb(255, 255, 255);
+          margin: 0 auto;
+          border-radius: 30px;
+          margin-bottom: 15px;
+          width: 20%;
+          box-shadow: 0 5px 10px rgb(56, 56, 56);
+          text-decoration: none;  
+          font-size: 20px;
+}
+
+li {
+          display: flex;
+          margin: 0 auto;
+          margin-left: 15px;
+          margin-bottom: 15px;
+          width: 50%;
+          text-decoration: none;  
+}
+
+h2{
+  color: aliceblue;
+}
+
+footer{
+  border: 1ex solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+    /* 1. Ubah tata letak kotak utama dari menyamping menjadi menumpuk ke bawah */
+    .Profil, .stet, .anjing {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* 2. Sesuaikan ukuran foto profil & logo agar tidak kegedean di HP */
+    .channel-ikon {
+        width: 180px;
+        height: 180px;
+    }
+    .channel-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 3. Buat kotak teks memenuhkan layar HP */
+    .lira, .Liro {
+        width: 100%;
+    }
+
+    /* 4. Tumpuk grid video dan pemutar video secara vertikal */
+    .video-section {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .thumbnail-grid, .player-container {
+        width: 100%;
+    }
+
+    .player-container {
+        margin-top: 15px;
+    }
+
+    /* 5. Buat tombol sosial media di footer pas di tengah HP */
+    .ja {
+        width: 220px;
+    }
+}
